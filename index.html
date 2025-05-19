@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice ...</title>
+  <link rel="stylesheet" href="styles/styles.min.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📦 Ajouter une commande 📦</h1>
+    <form>
+      <input type="text" id="name" placeholder="Nom du produit" required>
+      <input type="number" id="price" placeholder="Prix unitaire" step="0.01" required>
+      <input type="number" id="quantity" placeholder="Quantité" required>
+      <button type="submit" class="add">Ajouter</button>
+    </form>
+    <div class="commande-list"></div>
+    <div class="total-global">Total global : <span>0.00€</span></div>
+  </div>
+</body>
+</html>

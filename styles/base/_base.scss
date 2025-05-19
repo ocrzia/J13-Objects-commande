@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&family=Share+Tech&display=swap');
+body {
+  overflow: hidden;
+}
+body::before {
+  content: '';
+  background:url('../img/fries.png') no-repeat center center/contain;
+  width: 800px;
+  height: 700px;
+  position: absolute;
+  left: -350px;
+  bottom:-80px;
+}
+.commande-list {
+  margin-top: 50px;
+}
+.commande-card {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  font-family: sans-serif;
+  transition:.3s all ease-in-out;
+  display: flex;
+  align-items:center;
+  .delete-btn {
+    margin-left: auto;
+    background: none;
+    color:#fff;
+    border:none;
+    padding:0.5rem 1rem;
+    border-radius:5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    &:hover {
+      transform:scale(1.3);
+    }
+  }
+  &:hover {
+    background: #eaeaea;
+    transform:scale(1.02);
+  }
+}
+
+.total-global {
+  position: absolute;
+  top:20px;
+  right: 20px;
+  font-size: 1.6rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  max-width:1000px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  margin:25px 0;
+  font-family: "Playwrite DK Loopet", cursive;
+  font-weight: normal;
+}
+form {
+  display: flex;
+  justify-content: center;
+  gap:1rem;
+}
+input {
+  padding:0.3rem 0.5rem;
+  border-radius:5px;
+  border:2px solid crimson;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  &:focus {
+    outline: none;
+    border:2px solid #000;
+  }
+}
+button {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background:crimson;
+  color:#fff;
+  border:none;
+  padding:0.5rem 1rem;
+  border-radius:5px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  &:hover {
+    background: #b30000;
+  }
+  &:focus {
+    outline: none;
+    background: #b30000;
+  }
+}
